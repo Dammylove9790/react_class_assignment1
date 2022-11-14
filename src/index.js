@@ -8,17 +8,13 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
+import './index.css';
 
-const style = {
-  display:'flex',
-} 
-
-const divImg= {
- width:'30%',
- backgroundColor: 'white',
- margin: '20px 10px',
-}
+// const divImg= {
+//  width:'30%',
+//  backgroundColor: 'white',
+//  margin: '20px',
+// }
 
 const products =[
   {productname : "Wrist Watch", productImage : "/images/1.jpg", price : "1200"},
@@ -40,10 +36,10 @@ const products =[
  const newProducts = products.map((value, index)=>{
   const {productname, productImage, price} = value;
   return (
-    <div key={index} style={divImg}>
+    <div key={index} className='divImg'>
     {productname}
     <br />
-    <img src= {productImage} alt={productname} />
+    <img src= {productImage} alt='' />
     <br />
    ${price}
     <br />
@@ -54,7 +50,7 @@ const products =[
 
  function App(){
      return (
-       <div style={style}>
+       <div className='productview'>
         {newProducts}   
        </div>
       )
