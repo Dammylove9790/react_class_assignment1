@@ -1,8 +1,11 @@
 
 .productview {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 } 
 
 .divImg {
-  margin: 20px;
+  margin: 10px;
  }

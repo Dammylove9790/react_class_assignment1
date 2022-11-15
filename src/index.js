@@ -31,6 +31,8 @@ const products =[
   {productname : "Plasma TV", productImage : "/images/12.jpg", price : "1020"},
   {productname : "Earpod", productImage : "/images/13.jpg", price : "3700"},
   {productname : "Powerbank", productImage : "/images/14.jpg", price : "2500"},
+  {productname : "Earpod", productImage : "/images/13.jpg", price : "3700"},
+  {productname : "Powerbank", productImage : "/images/14.jpg", price : "2500"},
 ]
 
  const newProducts = products.map((value, index)=>{
